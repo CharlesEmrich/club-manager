@@ -1,28 +1,48 @@
-# ClubManager
+# MTG Club Manager
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+#### Throwing Cards Around with Angular
 
-## Development server
+#### By Charles Emrich
+#### CharlesEmrich @ gitHub for any questions.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
+An app to manage the business, roster, and other data of a theoretical MTG players' club.
 
-## Code scaffolding
+## Planning
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+### Dependencies
+## Can be found in bower.json and package.json files.
 
-## Build
+## Specs
+| Behavior | Input | Output |
+| - | - | - |
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Installation
 
-## Running end-to-end tests
+* Clone the repository (https://github.com/CharlesEmrich/club-manager.git)
+* Run 'npm install' in terminal to install development dependencies.
+* Run 'bower install' in terminal to install runtime dependencies.
+* Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+* Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). Before running the tests make sure you are serving the app via `ng serve`.
+* Run 'ng serve' to start the local server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+## Known Bugs
 
-## Further help
+## Technologies Used
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* HTML
+* JavaScript
+* CSS
+* NPM
+* Bower
+* Angular 2
+* Angular CLI
+
+### License
+
+MIT
+
+Copyright (c) 2017 Charles Emrich

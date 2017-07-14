@@ -6,7 +6,7 @@
     <h3 (click)="goToDetailPage(member)"><em>{{member.name}}</em> plays {{member.format}}</h3>
     <div *ngIf="currentRoute === '/admin'">
       <hr>
-      <!-- <app-edit-member [selectedMember]="member"></app-edit-member> -->
+      <app-edit-member [selectedMember]="member"></app-edit-member>
     </div>
   </div>
 </div>

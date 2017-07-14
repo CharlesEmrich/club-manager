@@ -1,0 +1,12 @@
+<h4>Edit Member</h4>
+
+<label>New Member Name:</label>
+<input [(ngModel)]="selectedMember.name" (change)="beginUpdatingMember(selectedMember)">
+<br>
+
+<label>New Member Format:</label>
+<input [(ngModel)]="selectedMember.format" (change)="beginUpdatingMember(selectedMember)">
+<br>
+
+<hr>
+<button (click)="beginDeletingMember(selectedMember)">Delete</button>

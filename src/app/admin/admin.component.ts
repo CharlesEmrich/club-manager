@@ -5,7 +5,8 @@ import { Member } from '../member.model';
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.css']
+  styleUrls: ['./admin.component.css'],
+  providers: [MemberService]
 })
 export class AdminComponent implements OnInit {
 
@@ -15,7 +16,7 @@ export class AdminComponent implements OnInit {
   }
 
   submitForm(title: string, artist: string, description: string) {
-    var newMember: Member = new Member(title, artist, description);
+    var newMember: Member = new Member(title, artist);
     this.memberService.addMember(newMember);
   }
 }

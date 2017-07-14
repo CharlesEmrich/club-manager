@@ -6,12 +6,13 @@ import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { ListComponent } from './list/list.component';
+import { MemberDetailComponent } from './member-detail/member-detail.component';
+import { AdminComponent } from './admin/admin.component';
+import { AboutComponent } from './about/about.component';
 
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { MemberDetailComponent } from './member-detail/member-detail.component';
-import { AdminComponent } from './admin/admin.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,

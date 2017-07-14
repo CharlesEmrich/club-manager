@@ -1,7 +1,15 @@
 ...
 <h2>Member Roll</h2>
-
-<div *ngFor="let member of members  | async" class="panel panel-default">
+<div class="filter">
+  <select> (change)="onFormatChange($event.target.value)">
+    <option value="allFormats">All Formats</option>
+    <option value="Standard">Standard</option>
+    <option value="Modern">Modern</option>
+    <option value="Legacy">Legacy</option>
+    <option value="Vintage">Vintage</option>
+  </select>
+</div>
+<div *ngFor="let member of members | async " class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(member)"><em>{{member.name}}</em> plays {{member.format}}</h3>
     <div *ngIf="currentRoute === '/admin'">

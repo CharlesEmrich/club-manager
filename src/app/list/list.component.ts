@@ -14,6 +14,7 @@ import { MemberService } from './../member.service';
 export class ListComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  formatFilter: string = 'allFormats';
   constructor(private router: Router, private memberService: MemberService){}
 
   ngOnInit(){
@@ -23,4 +24,8 @@ export class ListComponent implements OnInit {
   goToDetailPage(clickedMember) {
      this.router.navigate(['members', clickedMember.$key]);
  };
+
+ onFormatChange(format: string) {
+   this.formatFilter = format;
+ }
 }

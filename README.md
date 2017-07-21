@@ -31,6 +31,17 @@ An app to manage the business, roster, and other data of a theoretical MTG playe
 * Run 'npm install' in terminal to install development dependencies.
 * Run 'bower install' in terminal to install runtime dependencies.
 * Since the app implements Firebase for its database, you will need to create an app with Firebase's built-in console and implement Firebase credentials in order to get the database to function.
+  * First, go to Firebase's website [here](http://firebase.google.com/).
+  * Select the option "Add Firebase to your web app."
+  * Add a file src/app/api-keys.ts to the project containing the following information:
+    export var masterFirebaseConfig = {
+    apiKey: "xxxx",
+    authDomain: "xxxx.firebaseapp.com",
+    databaseURL: "https://xxxx.firebaseio.com",
+    storageBucket: "xxxx.appspot.com",
+    messagingSenderId: "xxxx"
+  };
+  * Replace xxx strings in the above with your own api credentials.
 * Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 * Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 * Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). Before running the tests make sure you are serving the app via `ng serve`.
